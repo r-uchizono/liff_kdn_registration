@@ -2,7 +2,7 @@
 ////import express from 'express';
 
 ////import './style.css';
-////import liff from '@line/liff';
+import liff from '@line/liff';
 
 ////const idToken = liff.getIDToken();
 
