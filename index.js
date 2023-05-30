@@ -1,5 +1,5 @@
-// モジュールのインポート
-import express from 'express';
+////// モジュールのインポート
+////import express from 'express';
 
 ////import './style.css';
 ////import liff from '@line/liff';
@@ -31,17 +31,17 @@ import express from 'express';
 ////  });
 
 
-// Webサーバー設定
-const app = express();
+//// Webサーバー設定
+//const app = express();
 
-//サーバーとローカルでsslの部分が変わる
-const client = new Client({
-    user: "unis",
-    host: "dpg-cgvn4qodh87joksvpj70-a.oregon-postgres.render.com",
-    database: "event_f91d",
-    password: "gbFeZ4j0o2mXOlCdCw0qF4TMaYTkldcn",
-    port: "5432"
-})
+////サーバーとローカルでsslの部分が変わる
+//const client = new Client({
+//    user: "unis",
+//    host: "dpg-cgvn4qodh87joksvpj70-a.oregon-postgres.render.com",
+//    database: "event_f91d",
+//    password: "gbFeZ4j0o2mXOlCdCw0qF4TMaYTkldcn",
+//    port: "5432"
+//})
 
 /*const name = '名前が不明です';*/
 const liffId = "1660891355-wrO0ydxA";
@@ -54,19 +54,19 @@ liff.init({
     alert(err);
 })
 
-let query = {
-    text: "SELECT *" +
-        "  FROM m_event_base" +
-        " WHERE current_date BETWEEN start_ymd AND end_ymd" +
-        "    OR current_date < start_ymd" +
-        " ORDER BY start_ymd"
-}
+//let query = {
+//    text: "SELECT *" +
+//        "  FROM m_event_base" +
+//        " WHERE current_date BETWEEN start_ymd AND end_ymd" +
+//        "    OR current_date < start_ymd" +
+//        " ORDER BY start_ymd"
+//}
 
-client
-    .query(query)
-    .then((res) => {
-        console.log('処理１');
-    });
+//client
+//    .query(query)
+//    .then((res) => {
+//        console.log('処理１');
+//    });
 
 function getProfile() {
     liff.getProfile()
